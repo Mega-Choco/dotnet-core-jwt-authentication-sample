@@ -12,5 +12,15 @@
         {
             throw new NotImplementedException();
         }
+
+        public string GenerateRefreshToken(string token)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string ValidateToken(string token)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
