@@ -16,6 +16,8 @@ jwt-authentication-sample/appsettings.Development.json
 *.user
 *.userosscache
 *.sln.docstates
+.vs
+.idea
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
