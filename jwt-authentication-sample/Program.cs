@@ -7,6 +7,8 @@ builder.Services.AddDbContext<DatabaseContext>(options =>
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddScoped<IAuthService, AuthService>();
 
@@ -20,13 +22,10 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 app.UseHttpsRedirection();
-app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthorization();
-
-app.MapRazorPages();
+app.MapControllers();
 
 app.Run();

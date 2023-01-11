@@ -22,11 +22,14 @@ namespace jwtauthenticationsample.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("jwt_authentication_sample.Entity.Account", b =>
+            modelBuilder.Entity("jwt_authentication_sample.Models.Data.Account", b =>
                 {
                     b.Property<Guid>("Uid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Id")
                         .IsRequired()
@@ -40,6 +43,9 @@ namespace jwtauthenticationsample.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("ProfileImageUrl")
+                        .HasColumnType("text");
+
+                    b.Property<string>("RefreshToken")
                         .HasColumnType("text");
 
                     b.HasKey("Uid");

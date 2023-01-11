@@ -92,3 +92,5 @@ C:/Users/Nitori/source/repos/jwt-authentication-sample/jwt-authentication-sample
 /Users/nitori/Documents/workspace/dotnet-core/dotnet-core-jwt-authentication-sample/jwt-authentication-sample/obj/Debug/net7.0/jwt-authentication-sample.pdb
 /Users/nitori/Documents/workspace/dotnet-core/dotnet-core-jwt-authentication-sample/jwt-authentication-sample/obj/Debug/net7.0/jwt-authentication-sample.genruntimeconfig.cache
 /Users/nitori/Documents/workspace/dotnet-core/dotnet-core-jwt-authentication-sample/jwt-authentication-sample/obj/Debug/net7.0/ref/jwt-authentication-sample.dll
+/Users/nitori/Documents/workspace/dotnet-core/dotnet-core-jwt-authentication-sample/jwt-authentication-sample/bin/Debug/net7.0/appsettings.Development.json
+/Users/nitori/Documents/workspace/dotnet-core/dotnet-core-jwt-authentication-sample/jwt-authentication-sample/bin/Debug/net7.0/appsettings.json

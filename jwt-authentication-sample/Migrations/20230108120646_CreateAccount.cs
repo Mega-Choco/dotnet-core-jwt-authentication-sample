@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace jwtauthenticationsample.Migrations
 {
     /// <inheritdoc />
-    public partial class CreateAccounts : Migration
+    public partial class CreateAccount : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,7 +19,9 @@ namespace jwtauthenticationsample.Migrations
                     Id = table.Column<string>(type: "text", nullable: false),
                     Password = table.Column<string>(type: "text", nullable: false),
                     Name = table.Column<string>(type: "text", nullable: true),
-                    ProfileImageUrl = table.Column<string>(type: "text", nullable: true)
+                    ProfileImageUrl = table.Column<string>(type: "text", nullable: true),
+                    RefreshToken = table.Column<string>(type: "text", nullable: true),
+                    CreatedAt = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: false)
                 },
                 constraints: table =>
                 {

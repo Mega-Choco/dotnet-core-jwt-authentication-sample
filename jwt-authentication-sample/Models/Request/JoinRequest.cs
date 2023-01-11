@@ -21,11 +21,12 @@ namespace jwt_authentication_sample.Models.Request
         [NotNull]
         public string Name { get; set; }
 
+        /*
         /// <summary>
         /// 프로필 이미지
         /// </summary>
         [FromForm]
         public FormFile? ProfileImage { get; set; }
-
+        s*/
     }
 }
